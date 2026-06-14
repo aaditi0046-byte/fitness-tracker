@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Fitness Suggestion App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🏋️ AI Fitness Planner</h1>
+
+    <div class="card">
+
+      <input type="number" id="age" placeholder="Enter Age">
+
+      <input type="number" id="weight" placeholder="Enter Weight (kg)">
+
+      <input type="number" id="height" placeholder="Enter Height (cm)">
+
+      <select id="goal">
+        <option value="">Select Goal</option>
+        <option value="weightloss">Weight Loss</option>
+        <option value="musclegain">Muscle Gain</option>
+        <option value="fitness">General Fitness</option>
+      </select>
+
+      <button onclick="generatePlan()">Get Fitness Plan</button>
+
+      <div id="result"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
